@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">food</string>
+    <string name="detail_name">Name :</string>
+    <string name="detail_url">URL :</string>
+    <string name="detail_keywords">Keywords :</string>
+    <string name="detail_date">Date :</string>
+    <string name="detail_email">Email :</string>
+    <string name="detail_rating">Rating :</string>
+    <string name="detail_share">Share : </string>
+</resources>

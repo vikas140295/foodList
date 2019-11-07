@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+   >
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="*"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/burger"
+                android:layout_width="180dp"
+                android:layout_height="200dp"
+                android:layout_column="1"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:contentDescription="burger"
+                android:onClick="burgerDetailsActivity"
+                android:scaleType="fitXY"
+                android:src="@drawable/burger" />
+
+            <ImageView
+                android:id="@+id/paasta"
+                android:layout_width="180dp"
+                android:layout_height="200dp"
+                android:layout_column="2"
+                android:onClick="pastaDetailsActivity"
+                android:scaleType="fitXY"
+                android:src="@drawable/pasta" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/pizza"
+                android:layout_width="180dp"
+                android:layout_height="200dp"
+                android:layout_column="1"
+                android:layout_marginRight="10dp"
+                android:onClick="pizzaDetailsActivity"
+                android:scaleType="fitXY"
+                android:src="@drawable/pizza" />
+
+            <ImageView
+                android:id="@+id/wraps"
+                android:layout_width="180dp"
+                android:layout_height="200dp"
+                android:layout_column="2"
+                android:onClick="wrapsDetailsActivity"
+                android:scaleType="fitXY"
+                android:src="@drawable/wraps" />
+        </TableRow>
+    </TableLayout>
+
+</android.support.constraint.ConstraintLayout>
